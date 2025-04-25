@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanyu Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="jquery.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="active.js"></script>
+  </head>
+  <body>
+    <!-- theme -->
+    <div class="themes">
+      <div class="bored">
+        <!-- theme -->
+        <div id="theme" class="theme">
+          <!-- sun -->
+          <svg
+            id="sun"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-sun"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- moon -->
+          <svg
+            id="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-moon"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <div class="header-cont">
+      <header>
+        <!-- left -->
+        <div class="logo">
+          <a href="#home">
+            <img id="light" src="images/favicon_io/light logo.png" alt="" />
+            <img id="dark" src="images/favicon_io/dark logo.png" alt="" />
+          </a>
+        </div>
+
+        <!-- nav -->
+        <nav>
+          <a class="nav-link active" href="#home">home</a>
+          <a class="nav-link" href="#about">about</a>
+          <a class="nav-link" href="#menu">menu</a>
+          <a class="nav-link" href="#Testmonial">Testmonial</a>
+          <a class="nav-link" href="#contact">contact</a>
+        </nav>
+
+        <!-- btn -->
+        <div class="btn-cont">
+          <a href="#contact">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-message-circle"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+              ></path>
+            </svg>
+
+            chat
+          </a>
+        </div>
+        <!-- navi-menu -->
+        <div class="nav-menu">
+          <!-- open -->
+          <svg
+            id="open"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-align-right"
+          >
+            <line x1="21" y1="10" x2="7" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="7" y2="18"></line>
+          </svg>
+          <!-- close -->
+          <svg
+            id="close"
+            class="close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </header>
+    </div>
+
+    <!-- setions -->
+    <section id="home" class="home">
+      <!-- top -->
+      <div class="top">
+        <!-- content-->
+        <div class="content">
+          <!-- small -->
+          <h4>hungry</h4>
+          <div class="bar"></div>
+          <h2>
+            Taste the <span>Best</span> <br />
+            that <span>Surprise</span> you.
+          </h2>
+
+          <!-- image mobo -->
+          <div class="image-mobo">
+            <img src="images/favicon_io/home image.png" alt="" />
+          </div>
+          <!-- para -->
+          <p>
+            Our menu is carefuly crafted to offer a blend of traditional and
+            modern flavors, using only the freshest ingredients to create
+            unforgettable dishes.
+          </p>
+
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+            <a
+              target="_blank"
+              class="btn2"
+              href="https://www.tiktok.com/@sanyunowyoueating/video/7455960393572224262?is_from_webapp=1&sender_device=pc&web_id=7494247768521721350"
+            >
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-play"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              watch video</a
+            >
+          </div>
+
+          <!-- boards -->
+          <div class="boards">
+            <div class="card-1 card">
+              <h5>1250+</h5>
+              <p>Foods</p>
+            </div>
+
+            <div class="card-2 card">
+              <h5>1500+</h5>
+              <p>Deliveries</p>
+            </div>
+
+            <div class="card-3 card">
+              <h5>2500+</h5>
+              <p>Customers</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- home image -->
+        <div class="home-image">
+          <img src="images/favicon_io/home image.png" alt="" />
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="bottom">
+        <div class="heading">
+          <h3>Popular Menus</h3>
+          <!-- wallper -->
+          <div class="wallper">
+            <!-- box -->
+            <div class="box">
+              <div class="cont">
+                <h4>Pizza</h4>
+                <p>starting</p>
+                <h5>
+                  ugx:
+                  <span>20000</span>
+                </h5>
+              </div>
+              <!-- image -->
+              <div class="image">
+                <img src="images/favicon_io/pizza home.png" alt="" />
+              </div>
+            </div>
+            <!-- box -->
+            <div class="box">
+              <div class="cont">
+                <h4>Chiken</h4>
+                <p>starting</p>
+                <h5>
+                  ugx:
+                  <span>25000</span>
+                </h5>
+              </div>
+              <!-- image -->
+              <div class="image">
+                <img src="images/favicon_io/chicken home.png" alt="" />
+              </div>
+            </div>
+            <!-- box -->
+            <div class="box">
+              <div class="cont">
+                <h4>Chapati</h4>
+                <p>starting</p>
+                <h5>
+                  ugx:
+                  <span>12000</span>
+                </h5>
+              </div>
+              <!-- image -->
+              <div class="image">
+                <img src="images/favicon_io/chapati home.png" alt="" />
+              </div>
+            </div>
+            <!-- box -->
+            <div class="box">
+              <div class="cont">
+                <h4>Meat</h4>
+                <p>starting</p>
+                <h5>
+                  ugx:
+                  <span>17000</span>
+                </h5>
+              </div>
+              <!-- image -->
+              <div class="image">
+                <img src="images/favicon_io/meat home.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="about">
+      <!-- top -->
+      <div class="top">
+        <div class="headings">
+          <h4>about us</h4>
+          <h2>View the <span>Best</span> we do.</h2>
+        </div>
+
+        <div class="wallper">
+          <!-- box -->
+          <div class="box">
+            <!-- image -->
+            <div class="image image1">
+              <img src="images/favicon_io/all kinds.png" alt="" />
+            </div>
+
+            <!-- rate -->
+            <div class="rate">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+
+            <h4>All Kinds Of Food</h4>
+            <p>we offer a wide variety of dishes from different cuisines.</p>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- image -->
+            <div class="image">
+              <img src="images/favicon_io/fresh foods.png" alt="" />
+            </div>
+
+            <!-- rate -->
+            <div class="rate">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+
+            <h4>Fresh Foods</h4>
+            <p>
+              We select ingredients carefully, ensuring optimal freshness only.
+            </p>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- image -->
+            <div class="image">
+              <img src="images/favicon_io/best taste.png" alt="" />
+            </div>
+
+            <!-- rate -->
+            <div class="rate">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+
+            <h4>Best Taste</h4>
+            <p>We focus on delivering the freshest, best-testing dishes.</p>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- image -->
+            <div class="image">
+              <img src="images/favicon_io/on time.png" alt="" />
+            </div>
+
+            <!-- rate -->
+            <div class="rate">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+
+            <h4>On Time Delivary</h4>
+            <p>We prioritize timely delivery, ensuring your meal arrives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="bottom">
+        <!-- image -->
+        <div class="image-about">
+          <img src="images/favicon_io/about image.png" alt="" />
+        </div>
+
+        <!-- content -->
+        <div class="content">
+          <h2>
+            <span>Flavor</span> is our top priority in every <span>dish</span>.
+          </h2>
+
+          <!-- mobo image -->
+          <div class="mobo-image">
+            <img src="images/favicon_io/about image.png" alt="" />
+          </div>
+          <!-- para -->
+          <p>
+            At Sanyu Restaurat, we blelive that every meal should be a
+            delightful experience, bringing peole together over delicious food
+            and warm hospitality.
+          </p>
+
+          <!-- button -->
+          <div class="btn-cont">
+            <a class="btn1" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-phone-call"
+              >
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              order now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="menu">
+      <div class="headings">
+        <h4>Our Menu</h4>
+        <h2>View the <span>Best</span> we have.</h2>
+      </div>
+
+      <!-- wallper -->
+      <div class="wallper-1 wallper">
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/sanyu burger.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Sanyu Burger</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>11000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>12000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/coffe.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Coffe</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>9000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>10000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/chicken meat.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Chicken Meat</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>21000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>24000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/fish.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Fish.</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>17000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>19000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/frensh fries.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Frensh Fries</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>7000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>8000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- more -->
+      <div class="more">
+        <a href="#contact" class="view-more"
+          >View more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-right"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline></svg
+        ></a>
+      </div>
+      <div class="wallper-2 wallper">
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/sanyu burger.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Sanyu Burger</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>11000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>12000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/coffe.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Coffe</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>9000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>10000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/chicken meat.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Chicken Meat</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>21000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>24000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/fish.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Fish.</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>17000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>19000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/frensh fries.jpg" alt="" />
+          </div>
+          <!-- name -->
+          <div class="name">Frensh Fries</div>
+          <!-- rating -->
+          <div class="rating">
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+            <img src="images/favicon_io/star.png" alt="" />
+          </div>
+          <!-- availability -->
+          <div class="availability">
+            <div class="ball">
+              <img src="images/favicon_io/cheek.png" alt="" />
+            </div>
+
+            <!-- text -->
+            <div class="text">Available</div>
+          </div>
+          <!-- pricing -->
+          <div class="pricing">
+            <!-- now -->
+            <div class="now">ugx <span>7000</span></div>
+            <!-- dis -->
+            <div class="dis">
+              <div class="dis-bar"></div>
+              ugx <span>8000</span>
+            </div>
+          </div>
+          <!-- btn cont -->
+          <div class="btn-cont">
+            <a class="btn1" href="#"
+              >order now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Testmonial" class="Testmonial">
+      <div class="headings">
+        <h4>Testmonial</h4>
+        <h2>What our <span>Customers</span> say.</h2>
+      </div>
+
+      <!-- wallper -->
+      <div class="wallper">
+        <div class="cont">
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+          <!-- box -->
+          <div class="box">
+            <!-- quotes -->
+            <div class="quotes">
+              <svg
+                width="43"
+                height="28"
+                viewBox="0 0 43 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+                  fill="url(#paint0_linear_310_509)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_310_509"
+                    x1="28.8615"
+                    y1="-24.7969"
+                    x2="41.7939"
+                    y2="24.1471"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00887753" stop-color="#DEF9FA" />
+                    <stop offset="0.1723" stop-color="#BEF3F5" />
+                    <stop offset="0.4204" stop-color="#9DEDF0" />
+                    <stop offset="0.5512" stop-color="#7DE7EB" />
+                    <stop offset="0.7154" stop-color="#5CE1E6" />
+                    <stop offset="1" stop-color="#33BBCF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <!-- rating -->
+            <div class="rating">
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+              <img src="images/favicon_io/star.png" alt="" />
+            </div>
+            <p>
+              At Sanyu Restaurat, we blelive that every meal should be a
+              delightful experience.
+            </p>
+            <!-- profile -->
+            <div class="profile">
+              <div class="left">
+                <img
+                  src="images/favicon_io/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space copy.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <!-- name -->
+                <div class="name">Mark Tick</div>
+                <div class="dis">Abou the Meat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news latter -->
+    <section id="news-latter" class="news-latter">
+      <div class="headings">
+        <h4>News Letter</h4>
+        <h2>Stay <span>Updated</span> with fresh offers.</h2>
+      </div>
+
+      <!-- wallper -->
+      <form onsubmit="sendEmail(); reset(); return flase;">
+        <div class="wallper">
+          <!-- image -->
+          <div class="image">
+            <img src="images/favicon_io/news latter imge.png" alt="" />
+          </div>
+
+          <!-- content -->
+          <div class="content">
+            <h2>Subscribe to our <span>News </span> letter.</h2>
+            <p>
+              Stay updated with the latest offers, delicious meals, and exciting
+              promotions from Sanyu Restaurant every day.
+            </p>
+
+            <!-- input -->
+            <div class="input">
+              <!-- email icon -->
+              <div class="email-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mail"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+
+              <!-- input -->
+              <input required placeholder="Enter your email" type="email" />
+
+              <!-- btn -->
+              <div class="btn-cont">
+                <button type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14.328"
+                    height="15.806"
+                    viewBox="0 0 14.328 15.806"
+                  >
+                    <g id="bell" transform="translate(0.5 0.5)">
+                      <path
+                        id="Path_67"
+                        data-name="Path 67"
+                        d="M14.106,6.443a4.443,4.443,0,1,0-8.885,0C5.221,11.626,3,13.106,3,13.106H16.328s-2.221-1.481-2.221-6.664"
+                        transform="translate(-3 -2)"
+                        fill="none"
+                        stroke="#fffefc"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Path_68"
+                        data-name="Path 68"
+                        d="M12.832,21a1.481,1.481,0,0,1-2.562,0"
+                        transform="translate(-4.887 -6.932)"
+                        fill="none"
+                        stroke="#fffefc"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact">
+      <div class="headings">
+        <h4>Contact Us</h4>
+        <h2>Get in <span>Touch</span> with us.</h2>
+      </div>
+
+      <!-- wallper -->
+      <div class="wallper">
+        <!-- mmap -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7778533118335!2d32.623448688854964!3d0.25805490000001785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbfe58760ad79%3A0x5398c664d0f62628!2sSanyu%20luwombo%20fish%20and%20grill!5e0!3m2!1sen!2sug!4v1745431535668!5m2!1sen!2sug"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- form -->
+        <form>
+          <!-- names -->
+          <div class="names">
+            <div class="name">
+              <div class="lable">first name</div>
+              <input required type="text" />
+            </div>
+            <div class="name">
+              <div class="lable">last name</div>
+              <input required type="text" />
+            </div>
+          </div>
+
+          <!-- email -->
+          <div class="email">
+            <div class="lable">email</div>
+            <input required type="email" />
+          </div>
+
+          <!-- input area -->
+          <div class="text-are">
+            <div class="lable">your message</div>
+            <textarea required placeholder="" name="" id=""></textarea>
+          </div>
+
+          <!-- Ssubmit -->
+          <button type="submit">
+            submite
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-send"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-cont">
+        <!-- top -->
+        <div class="top">
+          <!-- left -->
+          <div class="left">
+            <a href="#home"
+              ><img src="images/favicon_io/dark logo.png" alt=""
+            /></a>
+
+            <!-- content -->
+            <div class="content">
+              <p>
+                Stay updated with the latest offers, delicious meals, and
+                exciting promotions from Sanyu Restaurant every day.
+              </p>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="right">
+            <!-- cont 1 -->
+            <div class="cont">
+              <div class="head">Services</div>
+              <a href="#">dining services</a>
+              <a href="#">beverages services</a>
+              <a href="#">delivery services</a>
+            </div>
+            <!-- cont 1 -->
+            <div class="cont">
+              <div class="head">Services</div>
+              <a href="#">dining services</a>
+              <a href="#">beverages services</a>
+              <a href="#">delivery services</a>
+            </div>
+            <!-- cont 1 -->
+            <div class="cont">
+              <div class="head">Services</div>
+              <a href="#">dining services</a>
+              <a href="#">beverages services</a>
+              <a href="#">delivery services</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom">
+          <p>
+            &copy; <span id="copyright-year"></span> Sanyu Restaurant. All
+            rights reserved.
+          </p>
+
+          <div class="icons">
+            <!-- 1 -->
+            <a
+              target="_blank"
+              href="https://www.instagram.com/sanyu_restaurant/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-instagram"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+            ></a>
+
+            <a target="_blank" href="https://www.tiktok.com/@sanyunowyoueating">
+              <!-- 2 -->
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                fill="#000000"
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+              >
+                <path
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"
+                /></svg
+            ></a>
+            <!-- 3 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-mail"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
