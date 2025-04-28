@@ -152,25 +152,29 @@ html {
   transform: scale(1.05);
 }
 
-.header-cont header nav {
+header #nav-mobo {
+  display: none;
+}
+
+.header-cont header nav, .header-cont header .nav-mobo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.2rem;
 }
 
-.header-cont header nav a {
+.header-cont header nav a, .header-cont header .nav-mobo a {
   color: var(--text-color);
   text-transform: capitalize;
   font-size: 1.1rem;
 }
 
-.header-cont header nav a:hover {
+.header-cont header nav a:hover, .header-cont header .nav-mobo a:hover {
   color: var(--main-color);
   transform: scale(1.05);
 }
 
-.header-cont header nav .active {
+.header-cont header nav .active, .header-cont header .nav-mobo .active {
   color: var(--main-color);
 }
 
@@ -381,6 +385,8 @@ section {
 .home .bottom {
   margin-top: 3rem;
   width: auto;
+  justify-content: start;
+  display: flex;
 }
 
 .home .bottom .heading h3 {

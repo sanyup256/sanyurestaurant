@@ -263,6 +263,11 @@
   }
 
   .header-cont header nav {
+    display: none;
+  }
+
+  .header-cont header #nav-mobo {
+    display: flex;
     transform: translateY(-100%);
     z-index: -100;
     background: var(--bg-color);
@@ -276,7 +281,7 @@
     border-radius: 3rem;
   }
 
-  .header-cont header nav a {
+  .header-cont header #nav-mobo a {
     font-size: 1.5rem;
   }
 
@@ -402,7 +407,7 @@
     overflow-y: auto;
     align-items: center;
     justify-content: start;
-    padding: 1.8rem 2rem 1.8rem .7rem;
+    padding: 1.8rem 2rem 1.8rem 0.7rem;
     border-radius: 2rem;
   }
 

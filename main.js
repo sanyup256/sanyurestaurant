@@ -54,24 +54,18 @@ $(document).ready(function () {
   $("#open").click(function () {
     $("#open").hide();
     $("#close").show();
-    $(".header-cont header nav").css("transform", "translateY(0%)");
+    $(".header-cont header #nav-mobo").css("transform", "translateY(0%)");
   });
 
   $("#close").click(function () {
     $("#close").hide();
     $("#open").show();
-    $(".header-cont header nav").css("transform", "translateY(-100%)");
+    $(".header-cont header #nav-mobo").css("transform", "translateY(-100%)");
   });
 
-  // $(".header-cont header nav a").click(function () {
-  //   $("#close").hide();
-  //   $("#open").show();
-  //   $(".header-cont header nav").css("transform", "translateY(-100%)");
-  // });
-
-  $("setion").click(function () {
+  $(".header-cont header #nav-mobo a").click(function () {
     $("#close").hide();
     $("#open").show();
-    $(".header-cont header nav").css("transform", "translateY(-100%)");
+    $(".header-cont header #nav-mobo").css("transform", "translateY(-100%)");
   });
 });
