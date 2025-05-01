@@ -488,6 +488,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: start;
+  cursor: pointer;
+}
+
+.about .top .wallper .box:hover {
+  transform: scale(1.03);
 }
 
 .about .top .wallper .box .image {
@@ -661,6 +666,11 @@ section {
   box-shadow: var(--box-shadow2);
   padding: 0.8rem;
   border-radius: 2.2rem;
+  cursor: pointer;
+}
+
+.menu .wallper .box:hover {
+  transform: scale(1.03);
 }
 
 .menu .wallper .box .image {
